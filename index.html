@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header-box">
+            <h1>Attendence Sheet</h1>
+        </div>
+        <div class="main-content">
+            <div class="result-box">
+                <p>Date : <span id="display-date"></span></p>
+                <p>Employee Name : <span id="display-name"></span></p>
+                <p>Employee Phone No - <span id="display-number"></span></p>
+                <p>Department Name : <span id="display-department"></span></p>
+                <p>Attendence : <span id="display-attendence"></span></p>
+                <p>Entry Time : <span id="display-entry-time"></span></p>
+                <p>Exit Time : <span id="display-exit-time"></span></p>
+                <div class="move-box">
+                    <button id="move-btn">Ready to Move</button>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div class="form-box">
+                <select id="attendence">
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+                <p>Enter Date : <input type="date" id="present-date"></p>
+                <p>Employee Name : <input type="text" id="employee-name" placeholder="Enter Name"></p>
+                <p>Employee Phone No : <input type="text" id="employee-no" placeholder="Enter Phone No"></p>
+                <p>Department : </p><select id="department">
+                    <option value="Human Resources">Human Resources (HR)</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Information Technology">Information Technology (IT)</option>
+                    <option value="Research and Development">Research and Development</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Administration">Administration</option>
+                    <option value="Strategy and Planning">Strategy and Planning</option>
+                </select>
+                <p>Office Entry Time <input type="time" id="office-entry-time"></p>
+                <p>Office Exit Time <input type="time" id="office-exit-time"></p>
+                <div class="submit-btn">
+                    <button id="sumbit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-content">
+            <div class="table-box">
+                <table id="table-box">
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Date</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                        <th>Entry Time</th>
+                        <th>Exit Time</th>
+                        <th>Duty Time</th>
+                    </tr>
+                    <tr>
+                        <!-- <td>Rohit Singha</td>
+                        <td>9883583218</td>
+                        <td>Information Technology</td>
+                        <td>{  }</td>
+                        <td>10-54</td>
+                        <td>08-32</td> -->
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
